@@ -21,11 +21,11 @@
 
 - Hosted Demonstration - [What To Wear Today? - AdeoWeb](https://adeoweb.amrfarouqa.website)
 
-[Back To The Top](#read-me-template)
+
 
 ---
 
-## Description WTWT?
+## Description
 
 Based on the weather of the city you request in Lithuania, Wear To Wear Today will recommend what to wear so that you don't feel too cold or too hot throughout the day. It will also provide what you should bring. For example it would recommend an umbrella on a rainy day.
 
@@ -43,7 +43,7 @@ Based on the weather of the city you request in Lithuania, Wear To Wear Today wi
 
 Before getting dressed in the morning, we typically check the weather in Lithuania. Is it going to downpour? Or be the most beautiful day of the year? And as much as we love good old Weather.com, it does not give us that much information. That's were WTWT comes in handy. WTWT is a service, which returns product recommendations depending on current weather in Lithuania using the third-party API [LHMT](https://api.meteo.lt/). Based on custom weather or cutom city this application suggests what to wear currently using stored products in database created using [php-faker-clothing](https://github.com/rauwebieten/php-faker-clothing).
 
-[Back To The Top](#read-me-template)
+
 
 ---
 
@@ -59,7 +59,7 @@ Before getting dressed in the morning, we typically check the weather in Lithuan
 - Run Command "symfony server:start" or "symfony serve"
 - Go to [localhost:8000](http://localhost:8000) or [http://127.0.0.1:8000](http://127.0.0.1:8000) to see adeoWeb-WTWT Application
 
-[Back To The Top](#read-me-template)
+
 
 ---
 
@@ -68,7 +68,7 @@ Before getting dressed in the morning, we typically check the weather in Lithuan
 - Search By Custom City (All Lithuanian Cities Available: 2055 Cities)
 - Search By Custom Weather (All Weather Conditions Available in meteo.lt)
 
-[Back To The Top](#read-me-template)
+
 
 ---
 
@@ -96,13 +96,11 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[Back To The Top](#read-me-template)
+
 
 ---
 
 ## Author Info
 
 - Email - [@aamrfarouqaa](mailto:aamrfarouqaa@gmail.com)
-- Website - [amrfarouqa](https://amrfarouqa.website)
-
-[Back To The Top](#read-me-template)
+- Website - [https://amrfarouqa.website](https://amrfarouqa.website)
