@@ -2,10 +2,12 @@
 
 namespace App\Controller;
 
+use App\Repository\CitiesRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\HttpFoundation\RedirectResponse;
+use Symfony\Component\HttpFoundation\Request;
 
 class MainController extends AbstractController
 {
@@ -43,10 +45,17 @@ class MainController extends AbstractController
 
     /**
      * @Route("/searchByCity", name="searchByCity")
+     * @param CitiesRepository $citiesRepository
+     * @return Response
      */
-    public function searchByCity()
+    public function searchByCity(CitiesRepository $citiesRepository)
     {
-        return $this -> render('search_by_city.html.twig');
+
+        $cities = $citiesRepository->findAll();
+
+        return $this -> render('search_by_city.html.twig', [
+            'cities' => $cities
+        ]);
     }
 
     /**
