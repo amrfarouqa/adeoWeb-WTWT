@@ -1,12 +1,12 @@
 {% extends('base.html.twig') %}
 
-{% block title %}  Search By Weather | AdeoWeb What To Wear Today &trade; - Coding Challenge by Amr Farouq {% endblock %}
+{% block title %}  Search By Weather Results | AdeoWeb What To Wear Today &trade; - Coding Challenge by Amr Farouq {% endblock %}
 
 {% block body %}
     <!-- Main -->
     <section id="main" class="wrapper style1">
         <header class="major">
-            <h2>AdeoWeb - What To Wear Today? &trade; | Search By Weather</h2>
+            <h2>AdeoWeb - What To Wear Today? &trade; | Search By Weather Results</h2>
             <h3><span><img src="init/images/logo.png" alt="logo" width="250px;"/></span></h3>
         </header>
     </section>
@@ -18,8 +18,7 @@
         <div class="container">
             <header class="major">
                 <h3>Results By Custom Weather</h3>
-                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Lithuanian Cities.."
-                       title="Type in a name">
+
                 <ul id="myUL">
                     {% for product in products %}
 
