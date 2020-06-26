@@ -8,7 +8,7 @@
 
 ### Table of Contents
 
-- [About the Project](#about)
+- [About the Project](#About-the-Project)
 - [Demonstration](#demonstration)
 - [Description](#description)
 - [Setup Guide](#setup-guide)
