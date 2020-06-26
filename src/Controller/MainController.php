@@ -24,7 +24,7 @@ class MainController extends AbstractController
      */
     public function contact()
     {
-        return $this -> render('contact.html.twig');
+        return $this -> render('main/contact.html.twig');
     }
 
     /**
@@ -32,7 +32,7 @@ class MainController extends AbstractController
      */
     public function how()
     {
-        return $this -> render('how_it_works.html.twig');
+        return $this -> render('main/how_it_works.html.twig');
     }
 
     /**
@@ -40,7 +40,7 @@ class MainController extends AbstractController
      */
     public function privacy()
     {
-        return $this -> render('privacy_policy.html.twig');
+        return $this -> render('main/privacy_policy.html.twig');
     }
 
 

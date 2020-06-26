@@ -4,28 +4,36 @@
 
 {% block body %}
 
-	<!-- Main -->
-	<section id="main" class="wrapper style1">
-		<header class="major">
-			<h2>AdeoWeb - What To Wear Today? &trade; | Home</h2>
-			<h3><span><img src="{{ asset('init/images/logo.png') }}" alt="logo" width="250px;"/></span></h3>
-		</header>
-		<div class="container">
+    <!-- Main -->
+    <section id="main" class="wrapper style1">
+        <header class="major">
+            <h2>AdeoWeb - What To Wear Today? &trade; | Home</h2>
+            <h3><span><img src="{{ asset('init/images/logo.png') }}" alt="logo"/></span></h3>
+        </header>
+        <div class="container">
 
-			<!-- Content -->
-			<section id="content">
-				<!-- Form -->
-				<section>
-					<h3>WTWT?</h3>
-					<p>Based on the weather of the city you request in Lithuania, Wear To Wear Today will recommend what to wear so that you don't feel too cold or too hot throughout the day. It will also provide what you should bring. For example it would recommend an umbrella on a rainy day.</p>
-					<hr />
-					<a href="{{ path('searchByCity') }}" class="button special small fit">Search By Custom City</a>
-					<a href="{{ path('searchByWeather') }}" class="button special small fit">Search By Custom Weather</a>
-				</section>
-			</section>
+            <!-- Content -->
+            <section id="content">
+                <!-- Form -->
+                <section>
+                    <h3>WTWT?</h3>
+                    <p>Based on the weather of the city you request in Lithuania, Wear To Wear Today will recommend what
+                        to wear so that you don't feel too cold or too hot throughout the day. It will also provide what
+                        you should bring. For example it would recommend an umbrella on a rainy day.</p>
+                    <hr/>
 
-		</div>
-	</section>
+
+                    <ul class="actions" id="homeButtons">
+                        <li><a href="{{ path('searchByCity') }}" class="button special small fit">Search By Custom
+                                City</a></li>
+                        <li><a href="{{ path('searchByWeather') }}" class="button special small fit">Search By Custom
+                                Weather</a></li>
+                    </ul>
+                </section>
+            </section>
+
+        </div>
+    </section>
 
 
 {% endblock %}

@@ -22,8 +22,9 @@ class SearchByCityController extends AbstractController
 
         $cities = $citiesRepository->findAll();
 
-        return $this -> render('search_by_city.html.twig', [
-            'cities' => $cities
+        return $this -> render('search/search_by_city.html.twig', [
+            'cities' => $cities,
+            'citiesCount' => count($cities)
         ]);
     }
 
@@ -40,15 +41,20 @@ class SearchByCityController extends AbstractController
 
         $jsonData = json_decode(($jsonContent), true);
 
+
         $detectedWeather = $jsonData['forecastTimestamps'][0]['conditionCode'];
+
+        $airTemperature = $jsonData['forecastTimestamps'][0]['airTemperature'];
+
 
         $products = $productsRepository->findBy(['weatherCondition' => $detectedWeather], $limit = null, $offset = null);
 
-        return $this->render('show_by_city.html.twig', [
+        return $this->render('search/show_by_city.html.twig', [
             'products' => $products,
             'totalProducts' => count($products),
             'cityName' => $city,
-            'weatherType' => $detectedWeather
+            'weatherType' => $detectedWeather,
+            'airTemperature' => $airTemperature
         ]);
 
     }

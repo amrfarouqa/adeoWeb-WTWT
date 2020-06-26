@@ -18,7 +18,7 @@ class SearchByWeatherController extends AbstractController
      */
     public function index()
     {
-        return $this -> render('search_by_weather.html.twig');
+        return $this -> render('search/search_by_weather.html.twig');
     }
 
     /**
@@ -32,7 +32,7 @@ class SearchByWeatherController extends AbstractController
 
         $products = $productsRepository->findBy(['weatherCondition' => $type], $limit = null, $offset = null);
 
-        return $this -> render('show_by_weather.html.twig', [
+        return $this -> render('search/show_by_weather.html.twig', [
             'products' => $products,
             'weatherType' => $type,
             'totalProducts' => count($products)
