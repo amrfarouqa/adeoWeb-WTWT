@@ -7,6 +7,11 @@
 	License: pixelarity.com/license
 */
 
+
+#tableCellCenter{
+	vertical-align: middle;
+}
+
 /* Basic */
 #myTopBtn {
 	display: none;

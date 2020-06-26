@@ -17,17 +17,38 @@
     <section id="one" class="wrapper style1">
         <div class="container">
             <header class="major">
-                <h3>Results By Custom Weather</h3>
+                <h3>Results By Custom Weather : {{ weatherType|capitalize }}</h3>
+                <br>
 
-                <ul id="myUL">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <td><b>Product Name</b></td>
+                        <td><b>Body Part</b></td>
+                        <td><b>Price</b></td>
+                        <td><b>Image</b></td>
+                    </tr>
+                    </thead>
+                    <tbody>
                     {% for product in products %}
-
-                        <li><a href="#">{{ product.productName }}</a></li>
-
+                        <tr>
+                            <td id="tableCellCenter">{{ product.productName }}</td>
+                            <td id="tableCellCenter">{{ product.bodyPart }}</td>
+                            <td id="tableCellCenter">{{ product.price }} &euro;</td>
+                            <td id="tableCellCenter"><img src="{{ asset(product.img) }}" alt="prodImage"/></td>
+                        </tr>
                     {% endfor %}
-                </ul>
+                    </tbody>
+                </table>
+
             </header>
         </div>
     </section>
+
+
+
+
+
+
 
 {% endblock %}

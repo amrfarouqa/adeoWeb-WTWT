@@ -33,7 +33,8 @@ class SearchByWeatherController extends AbstractController
         $products = $productsRepository->findBy(['weatherCondition' => $type], $limit = null, $offset = null);
 
         return $this -> render('show_by_weather.html.twig', [
-            'products' => $products
+            'products' => $products,
+            'weatherType' => $type
         ]);
 
     }
