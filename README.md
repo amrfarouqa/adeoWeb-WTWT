@@ -41,7 +41,7 @@ Based on the weather of the city you request in Lithuania, Wear To Wear Today wi
 
 #### How It Works
 
-Before getting dressed in the morning, we typically check the weather in Lithuania. Is it going to downpour? Or be the most beautiful day of the year? And as much as we love good old Weather.com, it does not give us that much information. That's were WTWT comes in handy. WTWT is a service, which returns product recommendations depending on current weather in Lithuania using the third-party API [LHMT](https://api.meteo.lt/). Based on custom weather or cutom city this application suggests what to wear currently using stored products in database created using [php-faker-clothing](https://github.com/rauwebieten/php-faker-clothing).
+Before getting dressed in the morning, we typically check the weather in Lithuania. Is it going to downpour? Or be the most beautiful day of the year? And as much as we love good old Weather.com, it does not give us that much information. That's were WTWT comes in handy. WTWT is a service, which returns product recommendations depending on current weather in Lithuania using the third-party API [LHMT - Meteo.lt](https://api.meteo.lt/). Based on custom weather or cutom city this application suggests what to wear currently using stored products in database created using [php-faker-clothing](https://github.com/rauwebieten/php-faker-clothing).
 
 
 
