@@ -7,12 +7,12 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
-    <link rel="stylesheet" href="init/css/skel.css"/>
-    <link rel="stylesheet" href="init/css/style.css"/>
-    <link rel="stylesheet" href="init/css/style-xlarge.css"/>
-    <link rel="stylesheet" href="init/css/ie/v9.css"/>
-    <link rel="stylesheet" href="init/css/ie/v8.css"/>
-    <link href="init/images/fav.png" rel="icon"/>
+    <link rel="stylesheet" href="{{ asset('init/css/skel.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('init/css/style.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('init/css/style-xlarge.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('init/css/ie/v9.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('init/css/ie/v8.css') }}"/>
+    <link href="{{ asset('init/images/fav.png') }}" rel="icon"/>
 
     {% block stylesheets %}{% endblock %}
 
@@ -51,15 +51,15 @@
 
 {% block javascripts %}{% endblock %}
 
-<script src="init/css/ie/html5shiv.js"></script><![endif]-->
-<script src="init/js/jquery.min.js"></script>
-<script src="init/js/jquery.dropotron.min.js"></script>
-<script src="init/js/jquery.scrollgress.min.js"></script>
-<script src="init/js/jquery.scrolly.min.js"></script>
-<script src="init/js/jquery.slidertron.min.js"></script>
-<script src="init/js/skel.min.js"></script>
-<script src="init/js/skel-layers.min.js"></script>
-<script src="init/js/init.js"></script>
+<script src="{{ asset('init/css/ie/html5shiv.js') }}"></script><![endif]-->
+<script src="{{ asset('init/js/jquery.min.js') }}"></script>
+<script src="{{ asset('init/js/jquery.dropotron.min.js') }}"></script>
+<script src="{{ asset('init/js/jquery.scrollgress.min.js') }}"></script>
+<script src="{{ asset('init/js/jquery.scrolly.min.js') }}"></script>
+<script src="{{ asset('init/js/jquery.slidertron.min.js') }}"></script>
+<script src="{{ asset('init/js/skel.min.js') }}"></script>
+<script src="{{ asset('init/js/skel-layers.min.js') }}"></script>
+<script src="{{ asset('init/js/init.js') }}"></script>
 
 
 </body>
