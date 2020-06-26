@@ -34,7 +34,8 @@ class SearchByWeatherController extends AbstractController
 
         return $this -> render('show_by_weather.html.twig', [
             'products' => $products,
-            'weatherType' => $type
+            'weatherType' => $type,
+            'totalProducts' => count($products)
         ]);
 
     }
