@@ -27,4 +27,5 @@ class SearchByCityController extends AbstractController
     }
 
 
+
 }

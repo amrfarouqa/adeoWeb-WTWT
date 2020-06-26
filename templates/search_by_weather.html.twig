@@ -12,59 +12,41 @@
     </section>
 
 
+
     <!-- Three -->
     <section id="one" class="wrapper style1">
         <div class="container">
             <header class="major">
-
-
+                <h3>Please Click On The Weather To See Related Products</h3>
                 <ul id="myUL">
-                    {% for product in products %}
 
-                        <li><a href="#">{{ product.productName }}</a></li>
+                    <li><a href="{{ path('weatherTypeRoute', {'type': 'clear'}) }}">Clear</a></li>
 
-                    {% endfor %}
+                    <li><a href="{{ path('weatherTypeRoute', {'type': 'isolated-clouds'}) }}">Isolated-Clouds</a></li>
+
+                    <li><a href="{{ path('weatherTypeRoute', {'type': 'scattered-clouds'}) }}">Scattered-Clouds</a></li>
+
+                    <li><a href="{{ path('weatherTypeRoute', {'type': 'overcast'}) }}">Overcast</a></li>
+
+                    <li><a href="{{ path('weatherTypeRoute', {'type': 'light-rain'}) }}">Light-Rain</a></li>
+
+                    <li><a href="{{ path('weatherTypeRoute', {'type': 'moderate-rain'}) }}">Moderate-Rain</a></li>
+
+                    <li><a href="{{ path('weatherTypeRoute', {'type': 'heavy-rain'}) }}">Heavy-Rain</a></li>
+
+                    <li><a href="{{ path('weatherTypeRoute', {'type': 'sleet'}) }}">Sleet</a></li>
+
+                    <li><a href="{{ path('weatherTypeRoute', {'type': 'light-snow'}) }}">Light-Snow</a></li>
+
+                    <li><a href="{{ path('weatherTypeRoute', {'type': 'moderate-snow'}) }}">Moderate-Snow</a></li>
+
+                    <li><a href="{{ path('weatherTypeRoute', {'type': 'heavy-snow'}) }}">Heavy-Snow</a></li>
+
+                    <li><a href="{{ path('weatherTypeRoute', {'type': 'fog'}) }}">Fog</a></li>
+
                 </ul>
             </header>
         </div>
     </section>
-
-
-
-{#    <!-- Three -->#}
-{#    <section id="one" class="wrapper style1">#}
-{#        <div class="container">#}
-{#            <header class="major">#}
-{#                <h3>Please Click On The Weather To See Related Products</h3>#}
-{#                <ul id="myUL">#}
-
-{#                    <li><a href="#">Clear</a></li>#}
-
-{#                    <li><a href="#">Isolated-Clouds</a></li>#}
-
-{#                    <li><a href="#">Scattered-Clouds</a></li>#}
-
-{#                    <li><a href="#">Overcast</a></li>#}
-
-{#                    <li><a href="#">Light-Rain</a></li>#}
-
-{#                    <li><a href="#">Moderate-Rain</a></li>#}
-
-{#                    <li><a href="#">Heavy-Rain</a></li>#}
-
-{#                    <li><a href="#">Sleet</a></li>#}
-
-{#                    <li><a href="#">Light-Snow</a></li>#}
-
-{#                    <li><a href="#">Moderate-Snow</a></li>#}
-
-{#                    <li><a href="#">Heavy-Snow</a></li>#}
-
-{#                    <li><a href="#">Fog</a></li>#}
-
-{#                </ul>#}
-{#            </header>#}
-{#        </div>#}
-{#    </section>#}
 
 {% endblock %}

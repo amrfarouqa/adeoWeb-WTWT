@@ -1,0 +1,62 @@
+{% extends('base.html.twig') %}
+
+{% block title %}  Search By City | AdeoWeb What To Wear Today &trade; - Coding Challenge by Amr Farouq {% endblock %}
+
+{% block body %}
+    <!-- Main -->
+    <section id="main" class="wrapper style1">
+        <header class="major">
+            <h2>AdeoWeb - What To Wear Today? &trade; | Search By City</h2>
+            <h3><span><img src="init/images/logo.png" alt="logo" width="250px;"/></span></h3>
+        </header>
+    </section>
+
+    <!-- Three -->
+    <section id="one" class="wrapper style1">
+        <div class="container">
+            <header class="major">
+                <h3>Please Click On The City To See Related Products</h3>
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Lithuanian Cities.."
+                       title="Type in a name">
+{#                <ul id="myUL">#}
+{#                    {% for city in cities %}#}
+
+{#                    <li><a href="#">{{ city.name }}</a></li>#}
+
+{#                    {% endfor %}#}
+{#                </ul>#}
+            </header>
+        </div>
+    </section>
+
+
+{#    <h1>List of all Posts</h1>#}
+{#    <table class="table table-striped">#}
+{#        <thead>#}
+{#        <tr>#}
+{#            <td>ID</td>#}
+{#            <td>Title</td>#}
+{#            <td>Actions</td>#}
+{#        </tr>#}
+{#        </thead>#}
+{#        <tbody>#}
+{#        {% for city in cities %}#}
+{#            <tr>#}
+{#                <td>{{ city.id }}</td>#}
+{#                <td>#}
+{#                    <a href="{{ path('post.show', {id: post.id}) }}">#}
+{#                        {{ city.code }}#}
+{#                    </a>#}
+{#                </td>#}
+{#                <td>#}
+{#                    <a href="{{ path('post.delete', {id: post.id}) }}">#}
+{#                        Delete#}
+{#                    </a>#}
+{#                </td>#}
+{#            </tr>#}
+{#        {% endfor %}#}
+{#        </tbody>#}
+{#    </table>#}
+
+
+{% endblock %}
