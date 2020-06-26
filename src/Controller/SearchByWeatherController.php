@@ -16,7 +16,7 @@ class SearchByWeatherController extends AbstractController
      * @Route("/searchByWeather", name="searchByWeather")
      * @return Response
      */
-    public function searchByWeather()
+    public function index()
     {
         return $this -> render('search_by_weather.html.twig');
     }
@@ -27,7 +27,7 @@ class SearchByWeatherController extends AbstractController
      * @param ProductsRepository $productsRepository
      * @return Response
      */
-    public function index($type, ProductsRepository $productsRepository)
+    public function searchByWeather($type, ProductsRepository $productsRepository)
     {
 
         $products = $productsRepository->findBy(['weatherCondition' => $type], $limit = null, $offset = null);

@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Repository\CitiesRepository;
+use App\Repository\ProductsRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -16,7 +17,7 @@ class SearchByCityController extends AbstractController
      * @param CitiesRepository $citiesRepository
      * @return Response
      */
-    public function searchByCity(CitiesRepository $citiesRepository)
+    public function index(CitiesRepository $citiesRepository)
     {
 
         $cities = $citiesRepository->findAll();
@@ -26,6 +27,31 @@ class SearchByCityController extends AbstractController
         ]);
     }
 
+    /**
+     * @Route("/searchByCity/cityName/{city}", name="cityNameRoute")
+     * @param $city
+     * @param ProductsRepository $productsRepository
+     * @return Response
+     */
+    public function searchByCity($city, ProductsRepository $productsRepository)
+    {
+
+        $jsonContent = file_get_contents("https://api.meteo.lt/v1/places/". $city . "/forecasts/long-term");
+
+        $jsonData = json_decode(($jsonContent), true);
+
+        $detectedWeather = $jsonData['forecastTimestamps'][0]['conditionCode'];
+
+        $products = $productsRepository->findBy(['weatherCondition' => $detectedWeather], $limit = null, $offset = null);
+
+        return $this->render('show_by_city.html.twig', [
+            'products' => $products,
+            'totalProducts' => count($products),
+            'cityName' => $city,
+            'weatherType' => $detectedWeather
+        ]);
+
+    }
 
 
 }

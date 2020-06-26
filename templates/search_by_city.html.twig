@@ -21,7 +21,7 @@
                 <ul id="myUL">
                     {% for city in cities %}
 
-                    <li><a href="#">{{ city.name }}</a></li>
+                    <li><a href="{{ path('cityNameRoute', {'city': city.code}) }}">{{ city.name }}</a></li>
 
                     {% endfor %}
                 </ul>
