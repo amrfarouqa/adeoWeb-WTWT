@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <link rel="stylesheet" href="init/css/skel.css"/>
+    <link rel="stylesheet" href="init/css/style.css"/>
+    <link rel="stylesheet" href="init/css/style-xlarge.css"/>
+    <link rel="stylesheet" href="init/css/ie/v9.css"/>
+    <link rel="stylesheet" href="init/css/ie/v8.css"/>
+    <link href="init/images/fav.png" rel="icon"/>
+
+    {% block stylesheets %}{% endblock %}
+
+</head>
+<body>
+
+<!-- Header -->
+<header id="header" class="skel-layers-fixed">
+    <h1><a href="{{ path('home') }}">AdeoWeb - What To Wear Today? &trade; <span>by Amr Farouq</span></a></h1>
+    <nav id="nav">
+        <ul>
+            <li><a href="{{ path('home') }}">Home</a></li>
+            <li>
+                <a href="" class="icon fa-angle-down">Search</a>
+                <ul>
+                    <li><a href="{{ path('searchByCity') }}">By Custom City</a></li>
+                    <li><a href="{{ path('searchByWeather') }}">By Custom Weather</a></li>
+                </ul>
+            </li>
+            <li><a href="{{ path('howItWorks') }}">How It Works?</a></li>
+            <li><a href="{{ path('contact') }}">Contact</a></li>
+            <li><a href="{{ path('privacy') }}">Privacy Policy</a></li>
+        </ul>
+    </nav>
+</header>
+
+{% block body %}{% endblock %}
+
+<!-- Footer -->
+<footer id="footer">
+		<span class="copyright">
+			&copy; Copyright. All rights reserved. Design by <a href="https://amrfarouqa.website" target="_blank">Amr
+				Farouq</a>
+		</span>
+</footer>
+
+{% block javascripts %}{% endblock %}
+
+<script src="init/css/ie/html5shiv.js"></script><![endif]-->
+<script src="init/js/jquery.min.js"></script>
+<script src="init/js/jquery.dropotron.min.js"></script>
+<script src="init/js/jquery.scrollgress.min.js"></script>
+<script src="init/js/jquery.scrolly.min.js"></script>
+<script src="init/js/jquery.slidertron.min.js"></script>
+<script src="init/js/skel.min.js"></script>
+<script src="init/js/skel-layers.min.js"></script>
+<script src="init/js/init.js"></script>
+
+
+</body>
+</html>
