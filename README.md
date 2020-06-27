@@ -42,7 +42,7 @@ Based on the weather of the city you request in Lithuania, What To Wear Today wi
 - MySQL 
 - Apache Web Server
 - Composer
-- Symfony 5.0 Framework
+- Symfony 5.0 framework
 
 
 #### How It Works
@@ -62,6 +62,7 @@ Before getting dressed in the morning, we typically check the weather in Lithuan
 - Change Directory to Cloned Folder
 - Edit Database Credentials Line 32 [.env File](https://github.com/amrfarouqa/adeoWeb-WTWT/blob/master/.env)
 - Run Command Composer Install
+- Make Sure Apache Web Server and MySQL Database are Running
 - Run Command "symfony server:start" or "symfony serve"
 - Go to [localhost:8000](http://localhost:8000) or [http://127.0.0.1:8000](http://127.0.0.1:8000) to see adeoWeb-WTWT Application
 
@@ -131,5 +132,5 @@ SOFTWARE.
 
 ## Author Info
 
-- Email - [aamrfarouqaa@gmail.com](mailto:aamrfarouqaa@gmail.com)
+- Email - [@aamrfarouqaa](mailto:aamrfarouqaa@gmail.com)
 - Website - [https://amrfarouqa.website](https://amrfarouqa.website)
