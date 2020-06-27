@@ -60,7 +60,7 @@ Before getting dressed in the morning, we typically check the weather in Lithuan
 - Import database [wtwt](https://github.com/amrfarouqa/adeoWeb-WTWT/blob/master/mySQL%20FIle/wtwt.sql) into local phpMyAdmin
 - Clone adeoWeb-WTWT [Repo](https://github.com/amrfarouqa/adeoWeb-WTWT.git) 
 - Change Directory to Cloned Folder
-- Edit Database Credentials Line 32 [.env File](https://github.com/amrfarouqa/adeoWeb-WTWT/blob/master/.env) if you can't find it, you need to show hidden files on your system
+- Edit Database Credentials Line 32 [.env File](https://github.com/amrfarouqa/adeoWeb-WTWT/blob/master/.env). If you can't find it, you need to show hidden files on your system
 - Run Command "composer install"
 - Make Sure Apache Web Server and MySQL Database are Running
 - Run Command "symfony server:start" or "symfony serve"
