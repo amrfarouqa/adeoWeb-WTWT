@@ -20,7 +20,7 @@
 
 ## About the Project
 
-This project is intended to the selection process to work for [Adeo Web](https://www.adeoweb.biz/). I implemented this project to show and demonstrate my skills with [Symfony 5](https://symfony.com/). I never took any training what so ever regarding Symfony before, i learned during the process of making the application using online tutorials and manuals. Overall I found it fun and interesting.
+This project is intended to the selection process to work for [Adeo Web](https://www.adeoweb.biz/). I implemented this project to show and demonstrate my skills with [Symfony 5.1.2](https://symfony.com/). I never took any training what so ever regarding Symfony before, i learned during the process of making the application using online tutorials and manuals. Overall I found it fun and interesting.
 
 ---
 
@@ -42,7 +42,7 @@ Based on the weather of the city you request in Lithuania, What To Wear Today wi
 - MySQL 
 - Apache Web Server
 - Composer
-- Symfony 5.0 framework
+- Symfony 5.1.2 framework
 
 
 #### How It Works
