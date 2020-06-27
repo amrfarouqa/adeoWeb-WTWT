@@ -132,5 +132,5 @@ SOFTWARE.
 
 ## Author Info
 
-- Email - [@aamrfarouqaa](mailto:aamrfarouqaa@gmail.com)
+- Email - [aamrfarouqaa@gmail.com](mailto:aamrfarouqaa@gmail.com)
 - Website - [https://amrfarouqa.website](https://amrfarouqa.website)
