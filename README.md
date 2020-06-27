@@ -42,7 +42,7 @@ Based on the weather of the city you request in Lithuania, What To Wear Today wi
 - MySQL 
 - Apache Web Server
 - Composer
-- Symfony 5.1.2 framework
+- Symfony 5.1.2 Framework
 
 
 #### How It Works
