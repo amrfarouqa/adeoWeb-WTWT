@@ -2,15 +2,6 @@
 @import url("http://fonts.googleapis.com/css?family=Lato:300,700");
 
 
-@media screen and (max-width: 900px) {
-	#resolutionMsg {
-		display: block;
-	}
-	#bodyContent{
-		display: none;
-	}
-}
-
 #resolutionMsg{
 	position: absolute;
 	left: 50%;
